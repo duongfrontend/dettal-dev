@@ -1,0 +1,122 @@
+.app__about {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+.app__abouts {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+  width: 1500px;
+}
+.app__abouts-welcomes {
+  flex: 1;
+  h3 {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--black-color);
+  }
+}
+.app__abouts-welcome--title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  p {
+    font-size: 30px;
+    font-weight: 900;
+    &:nth-child(1) {
+      text-transform: uppercase;
+      margin-right: 10px;
+      color: var(--secondary-color);
+    }
+    &:nth-child(2) {
+      font-size: 25px;
+      color: var(--black-color);
+    }
+  }
+}
+.app__abouts-welcome {
+  text-align: justify;
+  .texts {
+    font-size: 18px;
+    color: var(--gray-color);
+    line-height: 1.8;
+  }
+  .text-1 {
+    margin: 10px 0;
+    span {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-family: var(--font-base);
+      color: var(--secondary-color);
+      &:nth-child(2) {
+        color: red;
+      }
+      &:nth-child(3) {
+        color: rgb(0, 217, 255);
+      }
+    }
+  }
+}
+
+.app__profiles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  // margin-top: 2rem;
+}
+
+.app__profile-item {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 2rem 3rem 2rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 370px;
+    margin: 2rem 4rem;
+
+    img {
+      // height: 320px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .app__abouts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+    flex-direction: column;
+    width: 100%;
+  }
+  .app__profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+}
+.img-slider {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}

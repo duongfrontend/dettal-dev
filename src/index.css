@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap");
+
+:root {
+  --font-base2: "DM Sans", sans-serif;
+  --font-base: "Nunito Sans", sans-serif;
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+  --project-color: #ffffff;
+  --tag-color: #ffffff;
+}
+.dark-theme {
+  --primary-color: #36373f;
+  --secondary-color: #ff7738;
+  --black-color: #ffffff;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #e4e4e4;
+  --brown-color: #46364a;
+  --white-color: #d6d6d6;
+  --project-color: #5d5d5d;
+  --tag-color: #e65734;
+}
+.some-class {
+  background-color: var(--secondary-color) !important;
+}
+.color-text {
+  color: var(--secondary-color) !important;
+  letter-spacing: 1.3px;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* theme */
+.sun-theme {
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 900;
+}
+.mon-theme {
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(39, 39, 39);
+  font-weight: 900;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
